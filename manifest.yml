@@ -6,8 +6,9 @@ applications:
   # Currently defaults to PWS
 #  buildpack: https://github.com/thomasdarimont/java-buildpack.git
   buildpacks:
-    - https://github.com/cloudfoundry/java-buildpack.git
+    - java_buildpack_offline
   path: target/spring-boot-keycloak-server-example-0.1.802.0.BUILD-SNAPSHOT.jar
   env:
     KEYCLOAK_ADMIN_USERNAME: admin
     KEYCLOAK_ADMIN_PASSWORD: admin
+    JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ } }'
