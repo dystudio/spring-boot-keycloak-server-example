@@ -7,7 +7,7 @@ applications:
 #  buildpack: https://github.com/thomasdarimont/java-buildpack.git
   buildpacks:
     - java_buildpack_offline
-  path: target/spring-boot-keycloak-server-example-0.1.802.0.BUILD-SNAPSHOT.jar
+  path: target/spring-boot-keycloak-server-example-0.1.801.0.BUILD-SNAPSHOT.jar
   env:
     KEYCLOAK_ADMIN_USERNAME: admin
     KEYCLOAK_ADMIN_PASSWORD: admin
